@@ -5,21 +5,21 @@
 
 ## Two functions to cache the inverse of a matrix
   
-  makeCacheMatrix <- function( x = matrix() ) {
+  makeCacheMatrix <- function(x = matrix()) {
     
       	## Initialization
           i <- NULL
       
             ## Method to set the matrix
             set <- function( y ) {
-                  m <<- y
+                  x <<- y
                   i <<- NULL
             }
         
             ## Method the get the matrix
             get <- function() {
             ## Return the matrix
-                	m
+                	x
             }
           
             ## Method to set the inverse of the matrix
